@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+repo=homebrew/brew
+version=$(curl -sI https://github.com/$repo/releases/latest | awk -F/ '/^[Ll]ocation:/{print $NF}' | grep -Eo '[0-9.]+')
+sed -Ei.bak "s,$repo/[^\"]+,$repo/$version," flake.nix
+rm flake.nix.bak
+
+nix flake update

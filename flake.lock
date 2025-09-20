@@ -1,0 +1,78 @@
+{
+  "nodes": {
+    "homebrew": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1759537532,
+        "narHash": "sha256-Ktk8Sfz/yOeRhRs0F50H9csrtc3wRgudLKrCd7oywu8=",
+        "owner": "homebrew",
+        "repo": "brew",
+        "rev": "999134536e623073ea9b2a8954eeea5898137239",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homebrew",
+        "ref": "4.6.16",
+        "repo": "brew",
+        "type": "github"
+      }
+    },
+    "homebrew-cask": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760190166,
+        "narHash": "sha256-nQHnyk2BDfTI9gUn4sYyCd9Q2d4KseUsCHOsVlvubCY=",
+        "owner": "homebrew",
+        "repo": "homebrew-cask",
+        "rev": "d87d4c4b5784ff4bbf4ca7b4a1bc177a368af6ab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homebrew",
+        "repo": "homebrew-cask",
+        "type": "github"
+      }
+    },
+    "homebrew-core": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760187912,
+        "narHash": "sha256-/xhU3mB5Y0g60hSVRGA5xzCx+K3FRr0+DiLSzY2sj7k=",
+        "owner": "homebrew",
+        "repo": "homebrew-core",
+        "rev": "31a62a2cbaf71300f3ba7953f3fc7ae3bdb5a103",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homebrew",
+        "repo": "homebrew-core",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "homebrew": "homebrew",
+        "homebrew-cask": "homebrew-cask",
+        "homebrew-core": "homebrew-core",
+        "xcode-cli-tools": "xcode-cli-tools"
+      }
+    },
+    "xcode-cli-tools": {
+      "locked": {
+        "lastModified": 1760190940,
+        "narHash": "sha256-+j9X8USHXiUzkgE4Wl7y3T1yx1QYaKjPnTJcZZLRejQ=",
+        "owner": "nix-ois",
+        "repo": "nix-xcode-cli-tools",
+        "rev": "82e07fae22edba273c6eeb38774e4e87fe1f4555",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-ois",
+        "repo": "nix-xcode-cli-tools",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
