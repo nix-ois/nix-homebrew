@@ -36,9 +36,7 @@ in
           builtins.attrNames
           (map (
             tapName:
-            if
-              builtins.match "[0-9A-Za-z]+/[0-9A-Za-z]+" tapName == null || lib.hasInfix "/homebrew-" tapName
-            then
+            if builtins.match "[^/]+/[^/]+" tapName == null || lib.hasInfix "/homebrew-" tapName then
               throw ''
                 Invalid tap name ${lib.strings.escapeNixIdentifier tapName}.
                 Must be in format "user/repo", without "homebrew-" prefix.
