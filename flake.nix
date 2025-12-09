@@ -1,7 +1,7 @@
 {
   inputs = {
     homebrew = {
-      url = "github:homebrew/brew/5.0.4";
+      url = "github:homebrew/brew/5.0.5";
       flake = false;
     };
 
